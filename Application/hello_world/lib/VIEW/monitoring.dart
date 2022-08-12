@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hello_world/Domain/Model/sensor_data.dart';
+import 'package:hello_world/VIEW/monitoring_view_model.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:blurrycontainer/blurrycontainer.dart';
+import 'package:json_annotation/json_annotation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:http/http.dart';
+import 'package:provider/provider.dart';
 
 class MonitoringPage extends StatefulWidget {
   MonitoringPage({super.key, });
+
   //
   // final String _Bright = 10.toString();
   // final String _Thermo = 10.toString();
@@ -33,8 +41,13 @@ class _MonitoringPageState extends State<MonitoringPage> {
   final String _Water_Thermo = 10.toString();
   final String _Water_Cm = 10.toString();
 
+
   @override
   Widget build(BuildContext context) {
+
+    final viewModel = context.watch<MonitoringViewModel>();
+    final state = viewModel.state;
+
     final page = [
       Container(color: Colors.white,
         height: 650,
@@ -113,7 +126,12 @@ class _MonitoringPageState extends State<MonitoringPage> {
                   height:200,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255,46,139,87),
-                    borderRadius: BorderRadius.circular(30)
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey
+                      )
+                    ]
                   ),
                   padding:const EdgeInsets.all(70),
                   alignment: Alignment.center,
@@ -626,6 +644,20 @@ class _MonitoringPageState extends State<MonitoringPage> {
             ],
             onChange: (index) => print(index),
           )),
+      Container(
+        child: ListView.builder(
+          itemCount: state.data.length,
+          itemBuilder: (context, index) {
+            final post = state.data[index];
+            return ListTile(
+                title: Text('Temp = ${Sensordata.Temperature} / Humi = ${Sensordata.Humidity}'),
+              subtitle: ,
+              );
+          }
+          
+        ),
+      )
+
     ];
 
     return Scaffold(
@@ -641,4 +673,6 @@ class _MonitoringPageState extends State<MonitoringPage> {
     );
   }
 }
+
+
 

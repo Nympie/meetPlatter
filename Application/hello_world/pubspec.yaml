@@ -40,6 +40,11 @@ dependencies:
   contained_tab_bar_view: ^0.8.0
   tab_indicator_styler: ^2.0.0
   blurrycontainer: ^1.0.2
+  http: ^0.13.5
+  json_annotation:
+  freezed_annotation:
+  provider: ^6.0.3
+
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +56,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  freezed:
+  json_serializable:
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
