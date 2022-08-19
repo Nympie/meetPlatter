@@ -6,16 +6,16 @@ part of 'sensor_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Sensordata _$$_SensordataFromJson(Map<String, dynamic> json) =>
-    _$_Sensordata(
-      Temperature: json['Temperature'] as int,
-      Humidity: json['Humidity'] as int,
-      Time: json['Time'] as String,
+Sensor _$SensorFromJson(Map<String, dynamic> json) => Sensor(
+      Humidity: json['Humidity'],
+      Temperature: json['Temperature'],
+      Time: json['Time'],
+      Date: json['Date'],
     );
 
-Map<String, dynamic> _$$_SensordataToJson(_$_Sensordata instance) =>
-    <String, dynamic>{
-      'Temperature': instance.Temperature,
+Map<String, dynamic> _$SensorToJson(Sensor instance) => <String, dynamic>{
       'Humidity': instance.Humidity,
+      'Temperature': instance.Temperature,
       'Time': instance.Time,
+      'Date': instance.Date,
     };

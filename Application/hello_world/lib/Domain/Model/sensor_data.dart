@@ -1,18 +1,22 @@
+// ignore_for_file: non_constant_identifier_names, prefer_typing_uninitialized_variables
 import 'package:json_annotation/json_annotation.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-
-part 'sensor_data.freezed.dart';
 
 part 'sensor_data.g.dart';
 
-@freezed
-class Sensordata with _$Sensordata {
-  factory Sensordata({
-    required int Temperature,
-    required int Humidity,
-    required String Time,
+@JsonSerializable()
+class Sensor {
+  var Humidity;
+  var Temperature;
+  var Time;
+  var Date;
 
-}) = _Sensordata;
+  Sensor(
+      {required this.Humidity,
+      required this.Temperature,
+      required this.Time,
+      required this.Date});
 
-  factory Sensordata.fromJson(Map<String, dynamic> json) => _$SensordataFromJson(json);
+  factory Sensor.fromJson(Map<String, dynamic> json) => _$SensorFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SensorToJson(this);
 }

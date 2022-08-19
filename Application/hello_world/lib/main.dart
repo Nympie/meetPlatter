@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'VIEW/Home.dart';
 
+
 void main() {
-  runApp(const meetPlatter());
+  // runApp(const meetPlatter());
+  runApp(
+     const meetPlatter()
+  );
 }
 
 class meetPlatter extends StatelessWidget {
@@ -17,3 +21,4 @@ class meetPlatter extends StatelessWidget {
     );
   }
 }
+
