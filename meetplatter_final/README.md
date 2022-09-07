@@ -1,6 +1,6 @@
 # meetplatter_final
 
-어플리케이션 - Flutter
+#어플리케이션 - Flutter
 
 -> Monitoring
 
@@ -11,7 +11,8 @@
 -> AI
 
 
-서버 - Flask
+
+#서버 - Flask
 
 -> HTML
 
@@ -22,7 +23,8 @@
 -> Database - Maria DB
 
 
-하드웨어 - IOT
+
+#하드웨어 - IOT
 
 -> Sensors
 
