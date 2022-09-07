@@ -1,6 +1,8 @@
 # meetplatter_final
 
-#### 어플리케이션 - Flutter
+
+
+## 어플리케이션 - Flutter
 
 -> Monitoring
 
@@ -9,6 +11,8 @@
 -> Camera
 
 -> AI
+
+
 
 
 
@@ -24,7 +28,9 @@
 
 
 
-### 하드웨어 - IOT
+
+
+## 하드웨어 - IOT
 
 -> Sensors
 
