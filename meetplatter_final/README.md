@@ -1,16 +1,13 @@
 # meetplatter_final
 
-A new Flutter project.
+어플리케이션 - Flutter
 
-## Getting Started
+서버 - Flask
 
-This project is a starting point for a Flutter application.
+AI - Tensorflow
 
-A few resources to get you started if this is your first Flutter project:
+데이터 베이스 - Maria DB
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+하드웨어 - IOT (Arduino, NodeMCU<esp8266>)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+통신 - REST API
