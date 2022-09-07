@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        th,td {padding: 15px;}
+    </style>
+ <title></title>
+</head>
+<body>
+    <table border = 1 align="center">
+        {% for key, value in log_dict.items() %}
+           <tr>
+              <th> {{ key }} </th>
+                <td> {{ value }} </td>
+           </tr>
+        {% endfor %}
+     </table>
+</body>
+</html>
