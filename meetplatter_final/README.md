@@ -1,7 +1,3 @@
-# meetplatter_final
-
-
-
 ## 어플리케이션 - Flutter
 
 -> Monitoring
