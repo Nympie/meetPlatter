@@ -1,6 +1,6 @@
 # meetplatter_final
 
-### 어플리케이션 - Flutter
+#### 어플리케이션 - Flutter
 
 -> Monitoring
 
@@ -12,7 +12,7 @@
 
 
 
-### 서버 - Flask
+## 서버 - Flask
 
 -> HTML
 
